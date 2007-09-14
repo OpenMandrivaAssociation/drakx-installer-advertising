@@ -1,5 +1,5 @@
 %define name drakx-installer-advertising
-%define version 0.2
+%define version 0.3
 %define release %mkrel 1
 
 Summary: DrakX installer advertising files
