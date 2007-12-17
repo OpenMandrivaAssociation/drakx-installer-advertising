@@ -10,7 +10,6 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Development/Other
 Url: http://wiki.mandriva.com/Tools/DrakX
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 advertising files needed to build Mandriva installer (DrakX)
