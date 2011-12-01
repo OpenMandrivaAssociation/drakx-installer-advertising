@@ -19,14 +19,14 @@ advertising files needed to build Mandriva installer (DrakX)
 %setup -q
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
-dest=$RPM_BUILD_ROOT%{_datadir}/%name
+dest=%{buildroot}%{_datadir}/%name
 mkdir -p $dest
 make install ROOTDEST=$dest
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
