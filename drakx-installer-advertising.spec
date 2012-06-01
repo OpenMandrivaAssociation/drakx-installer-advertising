@@ -16,8 +16,7 @@ Advertising files needed to build the Mandriva installer (DrakX).
 %build
 
 %install
-dest=%{buildroot}%{_datadir}/%{name}
-make install ROOTDEST=$dest
+make install ROOTDEST=%{buildroot}%{_datadir}/%{name}
 
 %files
-%{_datadir}/%name
+%{_datadir}/%{name}
