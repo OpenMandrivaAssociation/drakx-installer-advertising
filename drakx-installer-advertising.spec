@@ -1,12 +1,12 @@
 %define name drakx-installer-advertising
-%define version 2010.1
-%define release %mkrel 3
+%define version 2012.0
+%define release %mkrel 1
 
 Summary: DrakX installer advertising files
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: %{name}-%{version}.tar.xz
 License: GPL
 Group: Development/Other
 Url: http://wiki.mandriva.com/Tools/DrakX
