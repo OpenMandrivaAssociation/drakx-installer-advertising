@@ -1,35 +1,23 @@
-%define name drakx-installer-advertising
-%define version 2012.0
-%define release %mkrel 1
-
-Summary: DrakX installer advertising files
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{name}-%{version}.tar.xz
-License: GPL
-Group: Development/Other
-Url: http://wiki.mandriva.com/Tools/DrakX
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Summary:	DrakX installer advertising files
+Name:		drakx-installer-advertising
+Version:	2012.0
+Release:	1
+Source0:	%{name}-%{version}.tar.xz
+License:	GPLv2+
+Group:		Development/Other
+Url:		http://wiki.mandriva.com/Tools/DrakX
 
 %description
-advertising files needed to build Mandriva installer (DrakX)
+Advertising files needed to build the Mandriva installer (DrakX).
 
 %prep
 %setup -q
 
-%install
-rm -rf %{buildroot}
+%build
 
-dest=%{buildroot}%{_datadir}/%name
-mkdir -p $dest
+%install
+dest=%{buildroot}%{_datadir}/%{name}
 make install ROOTDEST=$dest
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_datadir}/%name
-
-
