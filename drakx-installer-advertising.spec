@@ -1,7 +1,8 @@
+%define	family	drakx-installer
 Summary:	DrakX installer advertising files
-Name:		drakx-installer-advertising
+Name:		%{family}-advertising
 Version:	2012.0
-Release:	1
+Release:	2
 Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		Development/Other
@@ -17,7 +18,12 @@ Advertising files needed to build the Mandriva installer (DrakX).
 %build
 
 %install
-make install ROOTDEST=%{buildroot}%{_datadir}/%{name}
+%makeinstall_std -C advertising
 
 %files
-%{_datadir}/%{name}
+%dir %{_libdir}/%{family}
+%dir %{_libdir}/%{family}/root
+%dir %{_libdir}/%{family}/root/install
+%dir %{_libdir}/%{family}/root/install/extra
+%dir %{_libdir}/%{family}/root/install/extra/advertising
+%{_libdir}/%{family}/root/install/extra/advertising/*
