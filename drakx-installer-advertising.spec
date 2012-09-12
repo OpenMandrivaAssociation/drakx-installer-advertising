@@ -2,7 +2,7 @@
 Summary:	DrakX installer advertising files
 Name:		%{family}-advertising
 Version:	2012.0
-Release:	3
+Release:	4
 Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		Development/Other
