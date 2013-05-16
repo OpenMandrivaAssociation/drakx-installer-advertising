@@ -1,8 +1,8 @@
 %define	family	drakx-installer
 Summary:	DrakX installer advertising files
 Name:		%{family}-advertising
-Version:	2012.0
-Release:	4
+Version:	2013.0
+Release:	1
 Source0:	%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		Development/Other
